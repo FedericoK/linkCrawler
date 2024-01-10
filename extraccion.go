@@ -27,7 +27,7 @@ func ExtraerLinks(n *html.Node) []string {
 
 	//el bucle comienza por el primer hijo del nodo n.FirstChild
 	//el bucle seguira mientras tenga hijos todavia el nodo c != nil, cuando no tenga mas hijos sera 0 y se detendra
-	//cuando termine con un bucle asumira el valor delsiguiente hijo c = c.NextSibling
+	//cuando termine con un bucle asumira el valor del siguiente hijo c = c.NextSibling
 	for c := n.FirstChild; c != nil; c = c.NextSibling {
 
 		//recursividad de ExtraerLinks, para poder ver si los hijos no tienen mas hijos con links
