@@ -14,7 +14,7 @@ func main() {
 	// Se realiza una solicitud Http a la url
 	resp, err := http.Get(url)
 	if err != nil {
-		//Si da error en la respuesta va a tirar mensaje de eeror y parar
+		//Si da error en la respuesta va a tirar mensaje de error y parar
 		fmt.Println("Error al realizar la solicitud: ", err)
 		return
 	}
